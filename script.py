@@ -1,3 +1,5 @@
+import os
+
 interfacesfile = open(r"/etc/network/interfaces", "w")
 interfacesfilea = open(r"/etc/network/interfaces", "a")
 
