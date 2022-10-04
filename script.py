@@ -28,7 +28,7 @@ iface {} inet dhcp
             dhcpconf2()
 
         address = input('Direccion IP del equipo: ')
-        netmask = input('Introduce la máscara: ')
+        netmask = input('Introduce la mascara: ')
         gateway = input('Introduce puerta de enlace: ')
         network = input('Introduce la red: ')
         broadcast = input('Introduce el broadcast: ')
@@ -71,7 +71,7 @@ if (dhorst == 'dhcp'):
 
 
 address = input('Direccion IP del equipo: ')
-netmask = input('Introduce la máscara: ')
+netmask = input('Introduce la mascara: ')
 gateway = input('Introduce puerta de enlace: ')
 network = input('Introduce la red: ')
 broadcast = input('Introduce el broadcast: ')
