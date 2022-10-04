@@ -47,6 +47,8 @@ iface {} inet static
 
         redmass()
     else:
+        os.system('systemctl restart networking')
+        os.system('ifup -a')
         exit()
 
 def dhcpconf():
