@@ -22,6 +22,7 @@ def redmass():
             interfacesfilea.write(("""
 allow-hotplug {}
 iface {} inet dhcp
+
             """).format(interface, interface))
 
             redmass()
@@ -30,13 +31,12 @@ iface {} inet dhcp
             dhcpconf2()
 
         address = input('Direccion IP del equipo: ')
-        netmask = input('Introduce la mascara: ')
+        netmask = input('Introduce la máscara: ')
         gateway = input('Introduce puerta de enlace: ')
         network = input('Introduce la red: ')
         broadcast = input('Introduce el broadcast: ')
 
         interfacesfilea.write(("""
-
 allow-hotplug {}
 iface {} inet static
     address {}
@@ -65,7 +65,6 @@ iface lo inet loopback
 allow-hotplug {}
 iface {} inet dhcp
 
-
     """).format(interface, interface))
 
     redmass()
@@ -75,7 +74,7 @@ if (dhorst == 'dhcp'):
 
 
 address = input('Direccion IP del equipo: ')
-netmask = input('Introduce la mascara: ')
+netmask = input('Introduce la máscara: ')
 gateway = input('Introduce puerta de enlace: ')
 network = input('Introduce la red: ')
 broadcast = input('Introduce el broadcast: ')
