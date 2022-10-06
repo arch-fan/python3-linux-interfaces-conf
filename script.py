@@ -9,7 +9,7 @@ interface = input('Introduce el interfaz: ')
 dhorst = input('dhcp o static: ')
 
 def redmass():
-    
+
     redmas = input('Quieres una red mas?(Y/N): ')
 
     if (redmas == 'Y'):
@@ -18,7 +18,7 @@ def redmass():
         dhorst = input('dhcp o estatic: ')
 
         def dhcpconf2():
-            
+
             interfacesfilea.write(("""
 allow-hotplug {}
 iface {} inet dhcp
@@ -53,6 +53,7 @@ iface {} inet static
         os.system('ifup -a')
         exit()
 
+
 def dhcpconf():
 
     interfacesfile.write(("""
@@ -68,6 +69,7 @@ iface {} inet dhcp
     """).format(interface, interface))
 
     redmass()
+
 
 if (dhorst == 'dhcp'):
     dhcpconf()
