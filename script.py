@@ -20,7 +20,7 @@ def redmass():
         def dhcpconf2():
 
             interfacesfilea.write(("""
-allow-hotplug {}
+auto {}
 iface {} inet dhcp
 
             """).format(interface, interface))
@@ -37,7 +37,7 @@ iface {} inet dhcp
         broadcast = input('Introduce el broadcast: ')
 
         interfacesfilea.write(("""
-allow-hotplug {}
+auto {}
 iface {} inet static
     address {}
     netmask {}
@@ -63,7 +63,7 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 
-allow-hotplug {}
+auto {}
 iface {} inet dhcp
 
     """).format(interface, interface))
@@ -88,7 +88,7 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 
-allow-hotplug {}
+auto {}
 iface {} inet static
     address {}
     netmask {}
